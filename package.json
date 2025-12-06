@@ -1,0 +1,88 @@
+{
+  "expo": {
+    "name": "lotteworld-app",
+    "slug": "lotteworld-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lotteworld.app",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
+      "googleServicesFile": "./ios/GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "com.lotteworld.app",
+      "googleServicesFile": "./android/app/google-services.json",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "CAMERA",
+        "NOTIFICATIONS",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "react-native-svg-transformer",
+      [
+        "@react-native-firebase/app",
+        {
+          "androidGoogleServicesFile": "./android/app/google-services.json",
+          "iosGoogleServicesFile": "./ios/GoogleService-Info.plist"
+        }
+      ],
+      [
+        "@react-native-firebase/messaging",
+        {
+          "androidGoogleServicesFile": "./android/app/google-services.json",
+          "iosGoogleServicesFile": "./ios/GoogleService-Info.plist"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "이곳에_eas_project_id_입력"
+      }
+    }
+  },
+  "name": "lotteworld-app",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-firebase/messaging": "^23.5.0",
+    "axios": "^1.13.2",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "expo": "~54.0.23",
+    "expo-auth-session": "~7.0.8",
+    "expo-device": "~8.0.9",
+    "expo-font": "~14.0.9",
+    "expo-notifications": "~0.32.12",
+    "expo-router": "~6.0.14",
+    "expo-splash-screen": "~31.0.10",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-size-matters": "^0.4.2",
+    "react-native-svg-transformer": "^1.5.2",
+    "react-native-webview": "13.15.0"
+  }
+}

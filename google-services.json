@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "134883200455",
+    "project_id": "lotteworld-728fe",
+    "storage_bucket": "lotteworld-728fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134883200455:android:f5e64985107349645a5de2",
+        "android_client_info": {
+          "package_name": "com.imhyeonggeun.lotteworldapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApfSRJaDclgkT41PAuZuxtLc0NwJG0eWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

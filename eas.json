@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 16.19.3",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "ios": { "simulator": true }
+    },
+    "ios-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": { "simulator": true }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://lotteworld-backend-production.up.railway.app",
+        "EXPO_PUBLIC_KAKAO_NATIVE_APP_KEY": "f049ecd13b47200f2dc29048ab92a3fc",
+        "EXPO_PUBLIC_KAKAO_REST_API_KEY": "5fd8a43c635287eca65bdd941c5e7fd2",
+        "EXPO_PUBLIC_BRIDGE_REDIRECT_URI": "https://media.seowon.ac.kr/s202011341/auth"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": { "buildType": "apk" } 
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
